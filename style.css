@@ -4,6 +4,19 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #E3F2FD;
 }
+.custom-navbar {
+  background-color: #0D47A1; 
+}
+
+.custom-navbar .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #FFA726; 
+}
+
 h1, h2 {
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -11,13 +24,18 @@ h1, h2 {
 }
 h1 {
   font-weight: 700;
+  font-size: 48px;
+}
+h2{
+  font-weight: 700;
 }
 .tag-line {
   color: #F5A623;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 600;
   text-align: center;
   margin: 0 1rem;
+  font-size: 30px;
 }
 .hero {
   padding: 2rem 1rem;
@@ -61,14 +79,32 @@ background-color: #FB8C00;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 /* Why Choose Section */
+.why-choose {
+  background-color: #E6F9F5; 
+  padding: 2rem 1rem;
+  border-top: 4px solid #FB8C00;
+  border-radius: 20px;
+    display: flex;                
+  justify-content: center;     
+  align-items: center;          
+  gap: 2rem;                  
+  flex-wrap: wrap;              
+}
+.why-choose h2{
+  font-size: 25px;
+  text-align: start;
+}
 .feature {
   text-align: center;
   background-color: #ffffff;
-  padding: 1rem;
+ margin:40px;
+ padding: 50px;
+  font-weight: bold;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  max-width: 200px;
+  max-width: 600px;
   transition: transform 0.3s ease;
+
 }
 .feature:hover {
   transform: translateY(-5px);
@@ -79,21 +115,31 @@ background-color: #FB8C00;
   margin-bottom: 0.5rem;
   
 }
-.why-choose {
-  background-color: #E6F9F5; 
-  padding: 2rem 1rem;
-  border-top: 4px solid #FB8C00;
-  border-radius: 20px;
+.why-choose p{
+  font-size: 18px;
+  margin-top: 10px;
 }
-.feature {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeInUp 0.6s ease forwards;
+.sign-up-btn{
+  padding:20px 40px;
+  cursor: pointer;
+  border: none;
+  background-color:#FB8C00;
+  border-radius: 10px;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: 600;
 }
-
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.sign-up-btn:hover{
+  background-color: green;
+}
+/* Footer */
+.footer {
+  background-color:rgb(19, 19, 19);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  font-size: 18px;
+  font-weight: 600;
 }
