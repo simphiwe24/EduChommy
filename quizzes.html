@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
   <title>Quiz Thing</title>
   <style>
     * {
@@ -20,15 +22,7 @@
       min-height: 100vh;
     }
 
-    .main-holder {
-      width: 100%;
-      max-width: 600px;
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    }
-
+  
     .section-header {
       text-align: center;
       margin-bottom: 25px;
@@ -207,6 +201,23 @@
         text-align: left;
       }
     
+      .motivation {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* spacing between image and text */
+}
+
+.motivation img {
+  width: 40px;   /* adjust as needed */
+  height: auto;
+}
+
+.you-ve-got-this-each {
+  margin: 0; /* remove default paragraph margin if needed */
+  font-size: 16px;
+}
+
+
     }
   </style>
 </head>
@@ -223,7 +234,7 @@
         <div class="quiz-info">
           <img src="img/frame-4.svg" alt="identity">
           <div class="quiz-text">
-            <span class="title">My Cool Self</span>
+            <span class="title">finacial Literacy</span>
             <span class="count">10 questions</span>
           </div>
         </div>
@@ -236,7 +247,7 @@
         <div class="quiz-info">
           <img src="img/frame-5.svg" alt="community">
           <div class="quiz-text">
-            <span class="title">Neighborhood 101</span>
+            <span class="title">career exploration</span>
             <span class="count">8 questions</span>
           </div>
         </div>
@@ -249,7 +260,7 @@
         <div class="quiz-info">
           <img src="img/frame-6.svg" alt="career">
           <div class="quiz-text">
-            <span class="title">Job Dreams</span>
+            <span class="title">substance abuse</span>
             <span class="count">12 questions</span>
           </div>
         </div>
@@ -262,7 +273,7 @@
         <div class="quiz-info">
           <img src="img/frame-7.svg" alt="money">
           <div class="quiz-text">
-            <span class="title">Money Moves</span>
+            <span class="title">self-identity</span>
             <span class="count">7 questions</span>
           </div>
         </div>
@@ -273,12 +284,16 @@
 
     </div>
   
-    <div class="motivation"><p class="you-ve-got-this-each">You&#39;ve got this! Each question is a step forward.</p></div>
+    <div class="motivation">
+        <img src="images/quizimage.png" alt="quizzes">
+        <p class="you-ve-got-this-each">You've got this! Each question is a step forward.</p>
+      </div>
+      
 
   <div class="quiz-card">
     <div class="top-section">
       <div class="icon-circle">
-        <img src="img/frame.svg" alt="badge" />
+        <i class="material-icons">emoji_events</i>
       </div>
       <div class="info-text">
         <h3>Quiz Champion</h3>
