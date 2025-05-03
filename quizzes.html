@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <title>Quiz Thing</title>
   <style>
     * {
@@ -14,7 +13,7 @@
     }
 
     body {
-        padding-top: 25%;
+      padding-top: 25%;
       font-family: sans-serif;
       background: #f9fafb;
       display: flex;
@@ -70,6 +69,7 @@
       font-weight: 600;
       font-size: 14px;
       color: #1f2937;
+      text-transform: capitalize;
     }
 
     .quiz-text .count {
@@ -107,10 +107,10 @@
         align-items: flex-start;
         gap: 10px;
       }
-    }
 
-    .quiz-right {
-      align-self: flex-end;
+      .quiz-right {
+        align-self: flex-end;
+      }
     }
 
     .quiz-card {
@@ -170,7 +170,7 @@
     }
 
     .progress-fill {
-      width: 40%; /* 2 out of 5 completed */
+      width: 40%;
       height: 100%;
       background-color: #9333ea;
       border-radius: 999px;
@@ -212,6 +212,7 @@
         font-size: 16px;
       }
     }
+
     .footer {
       background-color: #ffffff;
       border-top: 1px solid #e5e7eb;
@@ -225,14 +226,10 @@
       border-radius: 12px 12px 0 0;
       box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.05);
     }
-
   </style>
 </head>
-
-    
-    
 <body>
-    <div id="navbar"></div>
+  <div id="navbar"></div>
   <div class="main-holder">
     <div class="section-header">
       <h2>Badge Progress Tracker</h2>
@@ -240,31 +237,25 @@
 
     <div class="all-quizzes">
 
-        <div class="one-quiz" id="financial-literacy-quiz">
-            <div class="quiz-info">
-              <img src="img/frame-4.svg" alt="identity">
-              <div class="quiz-text">
-                <span class="title">Financial Literacy</span>
-                <span class="count">10 questions</span>
-              </div>
-            </div>
-            <div class="quiz-right">
-              <div class="progress-box">9/10</div>
-              <button class="start-btn">Start</button>
-            </div>
+      <div class="one-quiz" id="financial-literacy-quiz">
+        <div class="quiz-info">
+          <img src="img/frame-4.svg" alt="identity" />
+          <div class="quiz-text">
+            <span class="title">Financial Literacy</span>
+            <span class="count">10 questions</span>
           </div>
-          
         </div>
         <div class="quiz-right">
           <div class="progress-box">9/10</div>
+          <button class="start-btn">Start</button>
         </div>
       </div>
 
       <div class="one-quiz">
         <div class="quiz-info">
-          <img src="img/frame-5.svg" alt="community">
+          <img src="img/frame-5.svg" alt="community" />
           <div class="quiz-text">
-            <span class="title">career exploration</span>
+            <span class="title">Career Exploration</span>
             <span class="count">8 questions</span>
           </div>
         </div>
@@ -275,9 +266,9 @@
 
       <div class="one-quiz">
         <div class="quiz-info">
-          <img src="img/frame-6.svg" alt="career">
+          <img src="img/frame-6.svg" alt="career" />
           <div class="quiz-text">
-            <span class="title">substance abuse</span>
+            <span class="title">Substance Abuse</span>
             <span class="count">12 questions</span>
           </div>
         </div>
@@ -288,9 +279,9 @@
 
       <div class="one-quiz">
         <div class="quiz-info">
-          <img src="img/frame-7.svg" alt="money">
+          <img src="img/frame-7.svg" alt="money" />
           <div class="quiz-text">
-            <span class="title">self-identity</span>
+            <span class="title">Self-Identity</span>
             <span class="count">7 questions</span>
           </div>
         </div>
@@ -302,7 +293,7 @@
     </div>
 
     <div class="motivation">
-      <img src="images/quizimage.png" alt="quizzes">
+      <img src="images/quizimage.png" alt="quizzes" />
       <p class="you-ve-got-this-each">You've got this! Each question is a step forward.</p>
     </div>
 
@@ -321,10 +312,12 @@
       </div>
       <div class="progress-label">2/5 completed</div>
     </div>
+
   
-  <footer class="footer bg-dark text-white text-center p-3 mt-4">
+
+  <footer class="footer">
     <p>Made with 💚 by Edu-Chommy Team</p>
-</footer>
+  </footer>
   </div>
   <script src="navBar.js"></script>
   <script>
@@ -337,7 +330,7 @@
           quizElement.scrollIntoView({ behavior: "smooth", block: "center" });
           quizElement.style.boxShadow = "0 0 20px #9333ea";
           quizElement.style.transition = "box-shadow 0.5s ease";
-  
+
           setTimeout(() => {
             quizElement.style.boxShadow = "none";
           }, 3000);
@@ -345,7 +338,6 @@
       }
     });
   </script>
-  
 </body>
 </html>
 
