@@ -68,6 +68,14 @@ background-color: #FB8C00;
 .chat-button{
     background-color: #0D47A1;
 }
+.start-learning-button , .chat-button{
+text-decoration: none;
+color:white;
+border-radius: 8px;
+font-weight: bold;
+padding:0.75rem 1.5rem;
+}
+
 .start-learning-button:hover,.chat-button:hover{
     background-color: green;
 }
@@ -151,7 +159,7 @@ background-color: #FB8C00;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-    margin: 10px 0;
+    margin: 20px 0;
     text-align: center;
 }
 .lesson-card:active {
