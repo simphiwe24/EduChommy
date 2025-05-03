@@ -240,13 +240,20 @@
 
     <div class="all-quizzes">
 
-      <div class="one-quiz">
-        <div class="quiz-info">
-          <img src="img/frame-4.svg" alt="identity">
-          <div class="quiz-text">
-            <span class="title">finacial Literacy</span>
-            <span class="count">10 questions</span>
+        <div class="one-quiz" id="financial-literacy-quiz">
+            <div class="quiz-info">
+              <img src="img/frame-4.svg" alt="identity">
+              <div class="quiz-text">
+                <span class="title">Financial Literacy</span>
+                <span class="count">10 questions</span>
+              </div>
+            </div>
+            <div class="quiz-right">
+              <div class="progress-box">9/10</div>
+              <button class="start-btn">Start</button>
+            </div>
           </div>
+          
         </div>
         <div class="quiz-right">
           <div class="progress-box">9/10</div>
@@ -320,6 +327,25 @@
 </footer>
   </div>
   <script src="navBar.js"></script>
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      const quizId = params.get("quiz");
+      if (quizId) {
+        const quizElement = document.getElementById(quizId);
+        if (quizElement) {
+          quizElement.scrollIntoView({ behavior: "smooth", block: "center" });
+          quizElement.style.boxShadow = "0 0 20px #9333ea";
+          quizElement.style.transition = "box-shadow 0.5s ease";
+  
+          setTimeout(() => {
+            quizElement.style.boxShadow = "none";
+          }, 3000);
+        }
+      }
+    });
+  </script>
+  
 </body>
 </html>
 
