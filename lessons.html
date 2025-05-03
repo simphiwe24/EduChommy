@@ -10,6 +10,96 @@
 <link rel="stylesheet" href="style.css">
     <title>Life Orientation</title>
 </head>
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  padding-top: 60px;
+}
+
+h2 {
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 30px;
+}
+
+.lesson-card {
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  background-color: #ffffff;
+  transition: transform 0.2s ease;
+}
+
+.lesson-card:hover {
+  transform: translateY(-2px);
+}
+
+.lesson-card.completed {
+  border-left: 6px solid #22c55e;
+  background-color: #f0fdf4;
+}
+
+.lesson-card.in-progress {
+  border-left: 6px solid #facc15;
+  background-color: #fefce8;
+}
+
+.lesson-card.locked {
+  border-left: 6px solid #9ca3af;
+  background-color: #f3f4f6;
+  color: #9ca3af;
+}
+
+.lesson-card h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.lesson-card p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.progress-container {
+  margin-top: 40px;
+}
+
+.progress-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #9333ea;
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.footer {
+      background-color: #ffffff;
+      border-top: 1px solid #e5e7eb;
+      text-align: center;
+      font-size: 14px;
+      color: #6b7280;
+      padding: 16px;
+      margin: 40px auto 0;
+      width: 100%;
+      max-width: 340px;
+      border-radius: 12px 12px 0 0;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.05);
+    }
+
+
+
+</style>
 <body>
    <body>
     <div id="navbar"></div>

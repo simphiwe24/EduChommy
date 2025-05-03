@@ -147,3 +147,17 @@
       font-size: 2rem;
     }
   }
+
+  .footer {
+    background-color: #ffffff;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+    padding: 16px;
+    margin: 40px auto 0;
+    width: 100%;
+    max-width: 340px;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.05);
+  }
