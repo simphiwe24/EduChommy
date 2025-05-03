@@ -17,7 +17,7 @@ body {
   color: #FFA726; 
 }
 
-h1, h2 {
+h1, h2 ,h3{
   font-family: "Poppins", sans-serif;
   text-align: center;
   color: #0D47A1;
@@ -132,9 +132,10 @@ background-color: #FB8C00;
 .sign-up-btn:hover{
   background-color: green;
 }
-/* Footer */
+
 .footer {
-  background-color:rgb(19, 19, 19);
+ background-color: #0D47A1;
+
   color: #fff;
   text-align: center;
   padding: 1rem;
@@ -142,4 +143,51 @@ background-color: #FB8C00;
   margin-top: 2rem;
   font-size: 18px;
   font-weight: 600;
+
+}
+/*Lessons page styling */
+.lesson-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+.completed {
+    background-color: green;
+    color: white;
+}
+
+
+.in-progress {
+    background-color: #FB8C00;
+    color: white;
+}
+
+
+.locked {
+    background-color: #F2F2F2;
+    color: #333;
+}
+
+.progress-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.progress-circle {
+    width: 80px;
+    height: 80px;
+    background-color: #FB8C00;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+margin: auto;
 }
